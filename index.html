@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TO DO LIST</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TO DO LIST</h1>
+    <p class="subtitle">Simpan rencanamu di sini</p>
+
+    <div class="input-section">
+      <input type="text" id="todo-input" placeholder="Tambahkan tugas..." />
+      <input type="date" id="date-input" />
+      <button id="add-btn">+</button>
+    </div>
+
+    <input type="text" id="search-input" placeholder="Cari tugas..." />
+    
+    <div class="btn-section">
+      <button id="filter-btn">FILTER</button>
+      <button id="delete-all-btn" class="delete-all">HAPUS SEMUA</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tugas</th>
+          <th>Tenggat</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list"></tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
